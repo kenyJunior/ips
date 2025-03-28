@@ -92,12 +92,13 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
                   {content}
                 </p>
                 <Image
-                  class="w-full rounded-xl object-cover"
-                  src={post.data.cardImage}
-                  alt={post.data.cardImageAlt}
-                  draggable={"false"}
-                  format={"avif"}
-                />
+  class="w-full rounded-xl object-cover"
+  src={post.data.cardImage}
+  alt=""
+  draggable="false"
+  format="avif"
+/>
+
               </>
             ) : (
               <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">

@@ -82,7 +82,7 @@ interface Props {
 	{src && alt &&
 	<Image
         src={src}
-        alt={alt}
+         alt={alt || ""} // Utilise une chaîne vide si alt n'est pas fourni
         class="h-full w-full scale-110 object-cover object-center"
         draggable={"false"}
         loading={"eager"}

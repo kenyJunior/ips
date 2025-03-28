@@ -7,14 +7,14 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
-import blueprints from "@images/blueprints-image.avif";
-import personWorking from "@images/person-working.avif";
-import beforeAfter from "@images/before-after.avif";
-import constructionWorkers from "@images/construction-workers.avif";
-import aerialView from "@images/aerial-view.avif";
-import usingTools from "@images/using-tools.avif";
-import progressBuilding from "@images/progress-building.avif";
-import underConstruction from "@images/under-construction.avif";
+import IMG_2356 from "@images/IMG_2356.jpg";
+import elec from "@images/elec.jpg";
+import reseaux3 from "@images/reseaux3.jpg";
+import grand from "@images/grand.jpg";
+import data from "@images/data.jpg";
+import froid from "@images/froid.jpg";
+import securite2 from "@images/securite2.jpg";
+import securite from "@images/securite.jpg";
 import { SITE } from "@data/constants";
 
 interface Article {
@@ -36,59 +36,89 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
-    subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
-    single: false,
-    imgOne: blueprints,
+    title: "Energie Electrique",
+     subTitle: `L’énergie électrique est le pilier des infrastructures modernes et un facteur clé de leur efficacité. Nous mettons un point d’honneur à offrir des solutions d’alimentation électrique performantes et adaptées aux besoins spécifiques de chaque client. De la conception des réseaux électriques à l'installation des systèmes de distribution, notre équipe veille à ce que chaque projet respecte les normes les plus strictes en matière de sécurité et de performance. Notre expertise nous permet de garantir une fiabilité optimale, qu’il s’agisse de réseaux à basse ou haute tension, tout en optimisant la consommation énergétique.
+    `,
+    imgOne: IMG_2356,
     imgOneAlt: "Blueprints and digital tablet with construction plans.",
-    imgTwo: personWorking,
+    imgTwo: elec,
     imgTwoAlt: "Person working in the office",
+  },
+   {
+    isRightSection: false,
+    title: "Electricité",
+    subTitle:
+      "Nous intervenons sur une large gamme de services, allant de l’installation de tableaux électriques à la mise en place de systèmes de protection. Nous nous spécialisons dans la gestion complète des installations électriques, y compris leur maintenance, leur sécurisation et leur mise en conformité. Nous offrons également des solutions d’optimisation énergétique pour réduire les coûts tout en assurant une performance maximale. Chaque intervention est réalisée avec rigueur et précision, pour répondre aux exigences des secteurs industriels, commerciaux et publics.",
+    img: reseaux3,
+    imgAlt: "Construction site before and after",
+    btnExists: false,
+    btnTitle: "Learn More",
+    btnURL: "#",
+  },
+   {
+    isRightSection: true,
+    title: "Réseaux Infomatique",
+    subTitle:
+      "Nous proposons des solutions sur mesure pour optimiser les réseaux informatiques, de la conception à l’installation, en passant par le déploiement et le câblage structuré (cuivre et fibre optique). Nous assurons également la sécurisation des infrastructures réseau à travers des technologies avancées telles que les pare-feu et les systèmes de détection d'intrusion. Grâce à l’analyse de données, nous sommes en mesure d’optimiser la performance du réseau, de détecter les anomalies et de réduire la latence. Nos services incluent aussi l’administration et la maintenance des réseaux pour garantir une fiabilité continue.",
+    single: false,
+    imgOne: grand,
+    imgOneAlt: "Construction workers orchestrating a project",
+    imgTwo: data,
+    imgTwoAlt: "Aerial view of managed construction",
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "Télécommunications",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
-    img: beforeAfter,
+      "Dans le domaine des télécommunications, nous déployons des réseaux 4G/5G de haute qualité, ainsi que des systèmes de téléphonie IP et des solutions de communication unifiée (visioconférence, VoIP). L’analyse de données et l’intelligence artificielle sont des outils clés que nous utilisons pour anticiper les pannes, détecter les anomalies et améliorer la couverture réseau. Ces technologies nous permettent d’optimiser les infrastructures, d’assurer une sécurité renforcée et de garantir une communication fluide et fiable à travers des solutions adaptées à chaque besoin.",
+    img: reseaux3,
     imgAlt: "Construction site before and after",
-    btnExists: true,
+    btnExists: false,
     btnTitle: "Learn More",
     btnURL: "#",
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Big Data",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Dans un monde où les données sont une ressource clé, nous proposons des solutions Big Data qui permettent à nos clients d’optimiser leurs performances et de prendre des décisions éclairées. Nous nous chargeons de l’architecture et de la gestion des bases de données volumineuses, tout en offrant une analyse et un traitement des données en temps réel pour des résultats instantanés. Nous veillons également à la sécurisation et à la gouvernance des données afin de garantir leur intégrité. Enfin, nous développons des solutions d’intelligence artificielle et de machine learning pour extraire des insights précieux et maximiser l'impact des données collectées.",
     single: false,
-    imgOne: constructionWorkers,
+    imgOne: grand,
     imgOneAlt: "Construction workers orchestrating a project",
-    imgTwo: aerialView,
+    imgTwo: data,
     imgTwoAlt: "Aerial view of managed construction",
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Froid et Climatisation",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
-    img: usingTools,
+      "Le contrôle thermique joue un rôle clé dans le maintien du confort et de la performance, tant dans les environnements résidentiels que commerciaux et industriels. Nous proposons des solutions complètes en froid et climatisation, comprenant la conception et l’installation de systèmes de climatisation et de réfrigération adaptés à chaque besoin spécifique. Nous assurons également une maintenance préventive et corrective des équipements frigorifiques pour garantir leur performance continue. En parallèle, nous nous engageons dans l'optimisation énergétique et la gestion des flux thermiques afin de réduire la consommation tout en maintenant des conditions optimales. Nos solutions comprennent également le stockage et la conservation de produits sensibles, en veillant à ce que les conditions de température et d’humidité respectent les normes strictes de sécurité et de qualité.",
+    img: froid,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Sécurité Incendie",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "La sécurité des biens et des personnes commence par une gestion efficace des risques d'incendie. Nous proposons des solutions complètes et conformes aux réglementations en vigueur pour assurer une protection optimale. Nous réalisons des études et installons des systèmes de détection incendie performants, tels que des détecteurs de fumée et des alarmes. Nous mettons en place des dispositifs tels que les extincteurs automatiques et les sprinklers pour une intervention rapide. De plus, nous concevons des plans d’évacuation et offrons des formations pour préparer les équipes à intervenir en cas d’urgence. Nous assurons également la maintenance et la mise aux normes des installations existantes pour garantir une sécurité maximale.",
     single: false,
-    imgOne: progressBuilding,
+    imgOne: securite2,
     imgOneAlt: "In progress building structure",
-    imgTwo: underConstruction,
+    imgTwo: securite,
     imgTwoAlt: "Brown and gray building under construction",
-    btnExists: true,
+    btnExists: false,
     btnTitle: "Read more",
     btnURL: "#",
+  },
+  {
+    isRightSection: false,
+    title: "Automatisme",
+    subTitle:
+      "Nous proposons des solutions d'automatisme pour optimiser la gestion et le contrôle des systèmes industriels. Cela inclut la conception, l'installation et la programmation de systèmes automatisés pour améliorer l'efficacité des processus. Nos solutions intègrent des technologies avancées telles que les automates programmables (PLC), les capteurs intelligents et les systèmes de contrôle à distance. Nous intervenons également dans la maintenance et l'optimisation des installations existantes, garantissant ainsi une performance continue et une réduction des coûts d'exploitation. Nos solutions sur mesure sont adaptées aux besoins spécifiques de chaque client, qu'il s'agisse de production industrielle, de gestion de l'énergie ou d'autres applications automatisées.",
+    img: froid,
+    imgAlt:
+      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
 ];
 
@@ -115,11 +145,8 @@ const pageTitle: string = `Services | ${SITE.title}`;
 >
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
-    btnExists={true}
-    btnTitle="Schedule a Consultation"
-    btnURL="#"
+    title="Nos Domaines d’Expertise"
+    subTitle="Nous mettons notre savoir-faire au service de vos projets en proposant des solutions adaptées aux secteurs clés de l’industrie, des infrastructures et de la technologie. Notre expertise couvre plusieurs domaines stratégiques, chacun reposant sur des technologies avancées et une approche rigoureuse."
   />
   <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
@@ -159,22 +186,22 @@ const pageTitle: string = `Services | ${SITE.title}`;
   }
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
-    title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
+    title="Engagement pour des Solutions Sur Mesure"
+    subTitle="Grâce à notre expertise dans ces différents domaines, nous nous engageons à fournir des solutions sur mesure, innovantes et efficaces, visant à répondre aux défis uniques de chaque client. Nous mettons tout en œuvre pour assurer la performance, la sécurité et la durabilité de vos installations, tout en respectant les normes et standards les plus stricts."
     mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with ScrewFast as exceptional"
+    mainStatSubTitle="de nos clients évaluent leur expérience avec IPS Technologies comme exceptionnelle"
     stats={[
       {
         stat: "99.8%",
-        description: "project completion rate",
+        description: "de taux de réussite des projets",
       },
       {
         stat: "5,000+",
-        description: "successful installations",
+        description: "IPS Technologies comme exceptionnelle",
       },
       {
         stat: "85%",
-        description: "client growth year-over-year",
+        description: " croissance de notre clientèle d'année en année dans nos secteurs d'expertise",
       },
     ]}
   />

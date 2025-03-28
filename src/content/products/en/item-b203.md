@@ -1,12 +1,12 @@
 ---
-title: "SF-BN B203"
-description: "Tap Bolts and Nuts Set"
+title: "Solutions de Cybersécurité Complètes et Proactives pour Protéger Vos Systèmes"
+description: "Cybersécurité"
 main:
   id: 3
   content: |
-    Meet the SF-BN B203 – your reliable companion for professional-grade fastening. This comprehensive box set comes with a versatile selection of tap bolts and nuts, meticulously crafted to provide the strongest hold for your construction and assembly projects.
-  imgCard: "@/images/product-image-3.avif"
-  imgMain: "@/images/product-image-main-3.avif"
+   Notre expertise chez IPS repose sur une approche proactive et sur-mesure pour sécuriser vos infrastructures critiques. Face à l’évolution constante des menaces numériques, nous vous fournissons des solutions de cybersécurité complètes, adaptées à vos besoins, pour garantir la protection de vos données, réseaux et applications contre toute attaque.
+  imgCard: "@/images/product-image-3.png"
+  imgMain: "@/images/product-image-3.png"
   imgAlt: "Mockup boxes of a tap bolts and nuts set"
 tabs:
   - id: "tabs-with-card-item-1"
@@ -14,41 +14,34 @@ tabs:
     title: "Description"
   - id: "tabs-with-card-item-2"
     dataTab: "#tabs-with-card-2"
-    title: "Specifications"
-  - id: "tabs-with-card-item-3"
-    dataTab: "#tabs-with-card-3"
-    title: "Blueprints"
+    title: "Nos Services"
 longDescription:
-  title: "Strength Meets Precision"
+  title: "Cybersécurité"
   subTitle: |
-    The SF-BN B203 Tap Bolts and Nuts Set offers robust durability and precision for construction professionals, ensuring reliable performance in every application, from house framing to machinery assembly.
-  btnTitle: "Contact sales to learn more"
-  btnURL: "#"
+    À une époque où les menaces numériques se multiplient et deviennent de plus en plus complexes, la protection des données sensibles et des systèmes informatiques de votre entreprise ne peut être laissée au hasard. Chaque attaque réussie peut non seulement entraîner des pertes financières, mais aussi endommager la réputation de votre organisation. Nous proposons une approche dynamique et proactive de la cybersécurité, avec des solutions qui anticipent, détectent et neutralisent les menaces avant qu'elles ne compromettent vos opérations.
 descriptionList:
-  - title: "Corrosion Resistance"
-    subTitle: "Zinc coating not only provides a polished look but also shields against corrosion, ensuring longevity."
-  - title: "Improved Safety"
-    subTitle: "A secure fitting translates to safer structures with reduced risk of component failure."
-  - title: "Convenience"
-    subTitle: "This all-in-one set means you have the right size on hand, cutting down on project delays and additional trips to the hardware store."
+  - title: "Comment se protéger"
+    subTitle: "La protection contre les ransomwares passe par une détection proactive, des sauvegardes régulières, et la formation des employés pour reconnaître les tentatives de phishing, qui sont souvent à l’origine des attaques."
+  - title: "Que faire en cas d'ataque ?"
+    subTitle: "En cas de cyberattaque, il est crucial d’agir rapidement en mettant en œuvre le plan de réponse aux incidents, en isolant les systèmes affectés, et en restaurant les données à partir des sauvegardes sécurisées."
+
 specificationsLeft:
-  - title: "Material Composition"
-    subTitle: "Manufactured from high-grade steel, delivering strength and reliability for demanding applications."
-  - title: "Surface Finish"
-    subTitle: "Protected with a zinc coating to offer enhanced corrosion resistance and longevity."
-  - title: "Quantity Per Set"
-    subTitle: "The set includes a balanced selection of 25 tap bolts and 25 matching nuts."
-  - title: "Size Assortment"
-    subTitle: "Features a comprehensive range of sizes to cater to various project requirements, ensuring compatibility and versatility."
+  - title: "Analyse et Évaluation des Risques"
+    subTitle: "Nous réalisons un audit complet de vos infrastructures pour identifier les vulnérabilités et les risques potentiels. Nos experts proposent des solutions sur mesure pour sécuriser vos systèmes."
+  - title: "Solutions de Sécurité Avancées"
+    subTitle: "Nous déployons des technologies de pointe pour protéger vos réseaux, serveurs, et applications contre les menaces internes et externes. Cela inclut des pare-feu, des systèmes de détection et de prévention d’intrusions, ainsi que du cryptage avancé."
+  - title: "Gestion des Identités et des Accès (IAM)"
+    subTitle: "Nous assurons la sécurité de vos ressources sensibles avec des systèmes de gestion des identités et d’authentification multi-facteurs. Seules les personnes autorisées accèdent à vos données.
+"
 specificationsRight:
-  - title: "Thread Details"
-    subTitle: "Engineered with precision-cut threads for a secure fit and easy installation."
-  - title: "Mechanical Properties"
-    subTitle: "Each bolt and nut is designed to meet specific load rating or strength grades, suitable for structural applications."
-  - title: "Standards and Certifications"
-    subTitle: "Complies with relevant industry standards and certifications, ensuring consistent quality and safety."
-  - title: "Suitable Applications"
-    subTitle: "Ideal for a wide array of uses, from construction environments to mechanical assemblies that demand strong and secure joints."
+  - title: "Sécurisation des Applications et des Endpoints "
+    subTitle: "Nous sécurisons tous les points d’entrée, qu’il s’agisse de vos applications, de vos serveurs ou de vos périphériques, en assurant une protection maximale contre les attaques."
+  - title: "Surveillance et détection des menaces"
+    subTitle: "Grâce à une surveillance continue, nous détectons et neutralisons les menaces en temps réel, avant qu'elles ne compromettent vos systèmes."
+  - title: "Sécurité des données et conformité"
+    subTitle: "Assurer la protection de vos données sensibles et la conformité aux réglementations (RGPD, HIPAA, etc.) est une priorité. Nous mettons en œuvre des systèmes de chiffrement, des solutions de gestion des droits numériques (DRM), et des politiques de conservation des données pour garantir leur sécurité."
+  - title: "Formation et Sensibilisation"
+    subTitle: "Nous formons vos équipes aux bonnes pratiques de cybersécurité pour prévenir les erreurs humaines et créer une culture de sécurité au sein de votre organisation."
 blueprints:
   first: "@/images/blueprint-1.avif"
   second: "@/images/blueprint-2.avif"  

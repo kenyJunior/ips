@@ -1,29 +1,28 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "Quels types de solutions propose IPS Technologies ??",
+      "answer": "Nous proposons une gamme de solutions technologiques, incluant l’intelligence artificielle (IA), l’analyse de données à grande échelle, la cybersécurité, l’automatisation des processus, Intégration de Solutions IoT Intelligentes, le développement de logiciels sur mesure, et des solutions OSINT (Open-Source Intelligence)."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Comment l'intelligence artificielle peut-elle aider mon entreprise ?",
+      "answer": "Nos solutions d’IA permettent d’automatiser des processus complexes, d’améliorer la prise de décision grâce à des analyses prédictives, et de maximiser l’efficacité opérationnelle en optimisant vos flux de travail."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Proposez-vous des solutions sur mesure ?",
+      "answer": "Oui, toutes nos solutions sont conçues pour être sur mesure. Nous analysons les besoins spécifiques de votre entreprise pour développer des solutions technologiques adaptées qui répondent à vos objectifs opérationnels et stratégiques."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Offrez-vous des formations pour l’utilisation de vos technologies ?",
+      "answer": "Oui, nous proposons des formations adaptées pour vous aider à maîtriser nos solutions et optimiser leur utilisation."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "Comment l'analyse de données peut-elle améliorer la prise de décision stratégique ?",
+      "answer": "L'analyse de données vous aide à prendre des décisions éclairées en identifiant les tendances et les opportunités clés pour votre entreprise."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Où sont situés vos bureaux ?",
+      "answer": "Nous sommes situés à Douala, Logbaba, mais nous travaillons avec des clients à travers le monde grâce à nos solutions technologiques globales."
     }
   ]
 }

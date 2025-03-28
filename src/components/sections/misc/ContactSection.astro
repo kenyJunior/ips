@@ -11,9 +11,9 @@ import Icon from "@components/ui/icons/Icon.astro";
 // Define the variables that will be used in this component
 const title: string = "Contact us";
 const subTitle: string =
-  "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.";
-const formTitle: string = "Fill in the form below";
-const formSubTitle: string = "We'll get back to you in 1-2 business days.";
+  "Vous avez des questions ou souhaitez discuter d’un projet ? Contactez-nous et ensemble, créons la solution idéale avec l'expertise et les services d'Industrial Power Solutions.";
+const formTitle: string = "Remplissez le formulaire ci-dessous";
+const formSubTitle: string = "Nous reviendrons vers vous dans un délai de 1 à 2 jours ouvrables.";
 ---
 
 <!-- Contact Us -->
@@ -76,20 +76,11 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
-        <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
-          isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
-          linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
-        </ContactIconBlock>
 
         <ContactIconBlock
-          heading="FAQ"
-          content="Explore our FAQ for quick, clear answers to common queries."
-          isLinkVisible={true}
+          heading="Contact us by phone"
+          content="GSM - (+237) 675261568 / 696504274"
+          isLinkVisible={false}
           linkTitle="Visit FAQ"
           linkURL="#"
           isArrowVisible={true}
@@ -97,20 +88,23 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
-          content="UK ScrewFast"
-          isAddressVisible={true}
-          addressContent="72 Union Terrace, E10 4PE London"
-          ><Icon name="mapPin" />
+          heading="Contact us by email"
+          content="Vous préférez l'écrit ? Envoyez-nous un e-mail à"
+          isLinkVisible={true}
+          links={[
+            { title: "info@ips-tech.cm", url: "mailto:info@ips-tech.cm" },
+            { title: "info@ips.cm", url: "mailto:info@ips.cm"},  
+          ]}
+          isArrowVisible={false}
+          ><Icon name="envelopeOpen" />
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
-          isLinkVisible={true}
-          linkTitle="support@screwfast.uk"
-          linkURL="#"
-          ><Icon name="envelopeOpen" />
+          heading="Localisation"
+          content="Industrial Power Solutions"
+          isAddressVisible={true}
+          addressContent="Logbaba, Douala Cameroun"
+          ><Icon name="mapPin" />
         </ContactIconBlock>
       </div>
     </div>

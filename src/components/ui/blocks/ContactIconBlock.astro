@@ -6,8 +6,7 @@ const {
   isAddressVisible,
   addressContent,
   isLinkVisible,
-  linkTitle,
-  linkURL,
+  links, // Ajout d'un tableau de liens
   isArrowVisible,
 } = Astro.props;
 
@@ -18,8 +17,7 @@ interface Props {
   isAddressVisible?: boolean;
   addressContent?: string;
   isLinkVisible?: boolean;
-  linkTitle?: string;
-  linkURL?: string;
+  links?: { title: string; url: string }[]; // Ajout de la définition pour un tableau de liens
   isArrowVisible?: boolean;
 }
 
@@ -47,17 +45,22 @@ fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
         <p class="mt-1 text-sm italic text-neutral-500">{addressContent}</p>
       ) : null
     }
-    <!-- Conditional rendering of a link if isLinkVisible is true.
-         The link also conditionally includes an arrow SVG if isArrowVisible is true -->
+    <!-- Conditional rendering of multiple links if isLinkVisible is true -->
     {
-      isLinkVisible ? (
-        <a
-          class="group mt-2 inline-flex items-center gap-x-2 rounded-lg text-sm font-medium text-zinc-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-zinc-800 focus-visible:ring-3 dark:text-zinc-400 dark:ring-zinc-200 dark:hover:text-zinc-200 dark:focus:outline-hidden dark:focus:ring-1 "
-          href={linkURL}
-        >
-          {linkTitle}
-          {isArrowVisible ? <Fragment set:html={arrowSVG} /> : null}
-        </a>
+      isLinkVisible && links?.length > 0 ? (
+        <ul class="mt-2 space-y-1">
+          {links.map((link) => (
+            <li>
+              <a
+                class="group inline-flex items-center gap-x-2 rounded-lg text-sm font-medium text-zinc-600 outline-hidden ring-zinc-500 transition duration-300 hover:text-zinc-800 focus-visible:ring-3 dark:text-zinc-400 dark:ring-zinc-200 dark:hover:text-zinc-200 dark:focus:outline-hidden dark:focus:ring-1"
+                href={link.url}
+              >
+                {link.title}
+                {isArrowVisible ? <Fragment set:html={arrowSVG} /> : null}
+              </a>
+            </li>
+          ))}
+        </ul>
       ) : null
     }
   </div>

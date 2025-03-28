@@ -1,22 +1,22 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
+    "heading": "Études & Analyse des Données",
+    "content": "Chaque projet commence par une étude approfondie visant à comprendre vos enjeux métiers et technologiques. Nous collectons, analysons et interprétons les données pour identifier les meilleures stratégies à adopter. Grâce à des outils avancés en data science, intelligence artificielle et automatisation, nous vous fournissons des recommandations optimisées pour maximiser la valeur de vos projets.",
     "svg": "groups"
   },
   {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
+    "heading": "Conception & Développement de Solutions",
+    "content": "Nous concevons des solutions sur mesure en nous appuyant sur des architectures robustes et des technologies de pointe. Nos équipes développent des modèles analytiques avancés, intègrent des systèmes d’intelligence artificielle et optimisent l’automatisation des processus pour garantir des performances élevées et une scalabilité adaptée aux besoins évolutifs de nos clients.",
     "svg": "verified"
   },
   {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
+    "heading": "Réalisation & Déploiement",
+    "content": "Nous passons de la théorie à la pratique en mettant en œuvre les solutions définies. Cette phase inclut l’intégration de systèmes complexes, la migration de données, la mise en place d’infrastructures cloud et on-premise, ainsi que des tests rigoureux pour assurer la fiabilité, la sécurité et l’efficacité des solutions déployées.",
     "svg": "books"
   },
   {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
+    "heading": " Conseil & Optimisation Continue",
+    "content": "Notre engagement ne s’arrête pas à la mise en service. Nous vous accompagnons avec des services de conseil stratégique, des audits de performance et des recommandations d’amélioration continue. Nous vous aidons à exploiter tout le potentiel de vos infrastructures et de vos données pour anticiper les évolutions de votre marché et renforcer votre compétitivité.",
     "svg": "frame"
   }
 ]

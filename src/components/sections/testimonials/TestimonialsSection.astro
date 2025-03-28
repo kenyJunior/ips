@@ -11,7 +11,7 @@ const {
 
 interface Props {
   title: string;
-  subTitle?: string;
+  subTitle?: string[]; // subTitle est un tableau de chaînes représentant des paragraphes
   testimonials?: Testimonial[];
   statistics?: StatProps[];
 }
@@ -47,34 +47,38 @@ type StatProps = {
           {title}
         </h2>
         {subTitle &&
-        <p class="text-neutral-600 dark:text-neutral-400">
-          {subTitle}
-        </p>
-      }
+          subTitle.map((paragraph) => (
+            <p class="text-neutral-600 dark:text-neutral-400 mb-4" set:html={paragraph}></p>
+          ))
+        }
       </div>
 
       <!-- Generate a blockquote for each testimonial in the testimonials array by mapping over the array. -->
-      { testimonials &&
+      {testimonials &&
         testimonials.map((testimonial) => (
-        <TestimonialItem content={testimonial.content} author={testimonial.author} role={testimonial.role} avatarSrc={testimonial.avatarSrc} />
+          <TestimonialItem
+            content={testimonial.content}
+            author={testimonial.author}
+            role={testimonial.role}
+            avatarSrc={testimonial.avatarSrc}
+          />
         ))
       }
     </div>
-{ statistics &&
-    <div class="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
-      <div class="space-y-6 sm:space-y-8">
-        <ul
-          class="grid grid-cols-2 divide-x-2 divide-y-2 divide-neutral-300 overflow-hidden dark:divide-neutral-700"
-        >
-          <!-- Generate a list item for each stat in the statistics array by mapping over the array. -->
-          {
-            statistics.map((stat, index) => (
-            <StatsGrid count={stat.count} description={stat.description} index={index}/>
-            ))
-          }
-        </ul>
+
+    {statistics &&
+      <div class="mt-10 lg:col-span-6 lg:col-end-13 lg:mt-0">
+        <div class="space-y-6 sm:space-y-8">
+          <ul
+            class="grid grid-cols-2 divide-x-2 divide-y-2 divide-neutral-300 overflow-hidden dark:divide-neutral-700"
+          >
+            <!-- Generate a list item for each stat in the statistics array by mapping over the array. -->
+            {statistics.map((stat, index) => (
+              <StatsGrid count={stat.count} description={stat.description} index={index} />
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-  }
+    }
   </div>
 </section>

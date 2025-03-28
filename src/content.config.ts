@@ -26,8 +26,6 @@ const productsCollection = defineCollection({
     longDescription: z.object({
       title: z.string(),
       subTitle: z.string(),
-      btnTitle: z.string(),
-      btnURL: z.string(),
     }),
     descriptionList: z.array(
       z.object({
@@ -56,7 +54,7 @@ const productsCollection = defineCollection({
     blueprints: z.object({
       first: image().optional(),
       second: image().optional(),
-    }),
+    }).optional(),
   }),
 });
 
@@ -68,8 +66,8 @@ const blogCollection = defineCollection({
   contents: z.array(z.string()),
   author: z.string(),
   role: z.string().optional(),
-  authorImage: image(),
-  authorImageAlt: z.string(),
+  authorImage: image().optional(),
+  authorImageAlt: z.string().optional(),
   pubDate: z.date(),
   cardImage: image(),
   cardImageAlt: z.string(),

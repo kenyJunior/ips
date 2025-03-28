@@ -33,7 +33,7 @@ export default defineConfig({
       },
     },
   }), starlight({
-    title: "ScrewFast Docs",
+    title: "IPS Docs",
     defaultLocale: "root",
     // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
     // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
@@ -45,53 +45,43 @@ export default defineConfig({
         label: "English",
         lang: "en",
       },
-      de: { label: "Deutsch", lang: "de" },
-      es: { label: "Español", lang: "es" },
-      fa: { label: "Persian", lang: "fa", dir: "rtl" },
-      fr: { label: "Français", lang: "fr" },
-      ja: { label: "日本語", lang: "ja" },
-      "zh-cn": { label: "简体中文", lang: "zh-CN" },
+     // de: { label: "Deutsch", lang: "de" },
+      //es: { label: "Español", lang: "es" },
+      //fa: { label: "Persian", lang: "fa", dir: "rtl" },
+      //fr: { label: "Français", lang: "fr" },
+      //ja: { label: "日本語", lang: "ja" },
+      //"zh-cn": { label: "简体中文", lang: "zh-CN" },
     },
     // https://starlight.astro.build/guides/sidebar/
     sidebar: [
       {
-        label: "Quick Start Guides",
-        translations: {
-          de: "Schnellstartanleitungen",
-          es: "Guías de Inicio Rápido",
-          fa: "راهنمای شروع سریع",
-          fr: "Guides de Démarrage Rapide",
-          ja: "クイックスタートガイド",
-          "zh-cn": "快速入门指南",
-        },
+        label: "Présentation & Equipe",
+       
         autogenerate: { directory: "guides" },
       },
       {
-        label: "Tools & Equipment",
+        label: "Services & Solutions",
         items: [
-          { label: "Tool Guides", link: "tools/tool-guides/" },
-          { label: "Equipment Care", link: "tools/equipment-care/" },
+          { label: "Présentation des Services", link: "tools/tool-guides/" },
+          { label: "Solutions sur mesure ", link: "tools/equipment-care/" },
         ],
       },
       {
-        label: "Construction Services",
+        label: "Tarifs & Conditions",
         autogenerate: { directory: "construction" },
       },
       {
-        label: "Advanced Topics",
+        label: "Support & Ressources",
         autogenerate: { directory: "advanced" },
       },
     ],
-    social: {
-      github: "https://github.com/mearashadowfax/ScrewFast",
-    },
     disable404Route: true,
     customCss: ["./src/assets/styles/starlight.css"],
     favicon: "/favicon.ico",
     components: {
-      SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
-      Head: "./src/components/ui/starlight/Head.astro",
-      MobileMenuFooter: "./src/components/ui/starlight/MobileMenuFooter.astro",
+     // SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
+      //Head: "./src/components/ui/starlight/Head.astro",
+      //MobileMenuFooter: "./src/components/ui/starlight/MobileMenuFooter.astro",
       ThemeSelect: "./src/components/ui/starlight/ThemeSelect.astro",
     },
     head: [
