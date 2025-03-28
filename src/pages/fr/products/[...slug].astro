@@ -109,8 +109,8 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
               </p>
               <p class="mt-5">
                 <PrimaryCTA
-                  title={product.data.longDescription.btnTitle}
-                  url={product.data.longDescription.btnURL}
+                  title={product.data.longDescription?.title || "En savoir plus"}
+                  url={"#"}  
                 />
               </p>
             </div>
@@ -223,9 +223,9 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
         class="relative left-12 top-12 z-10 overflow-hidden rounded-xl shadow-lg md:left-12 md:top-16 md:-ml-12 lg:ml-0"
       >
         {
-          product.data.blueprints.first && (
+          product.data.blueprints?.first && (
             <Image
-              src={product.data.blueprints.first}
+              src={product.data.blueprints?.first}
               class="h-full w-full object-cover object-center"
               alt="Blueprint Illustration"
               format={"avif"}
@@ -235,16 +235,18 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
       </div>
 
       <div class="relative right-12 overflow-hidden rounded-xl shadow-xl">
-        {
-          product.data.blueprints.second && (
-            <Image
-              src={product.data.blueprints.second}
-              class="h-full w-full object-cover object-center"
-              alt="Blueprint Illustration"
-              format={"avif"}
-            />
-          )
-        }
+
+        {product.data.blueprints?.second && (
+          <img
+  src={
+    typeof product.data.blueprints?.second === "string"
+      ? product.data.blueprints.second
+      : product.data.blueprints?.second?.src || "/images/default-blueprint.jpg"
+  }
+  alt="Blueprint Second"
+  class="your-css-class"
+/>
+)}
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 ---
 // Import necessary components
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 
 import type { CollectionEntry } from "astro:content";
 
@@ -8,15 +8,20 @@ const { blogEntry } = Astro.props;
 
 interface Props {
   blogEntry: CollectionEntry<"blog">;
+  authorImage?: ImageMetadata;
+  authorImageAlt?: string;
 }
 ---
 
 <div class="shrink-0">
-  <Image
+  <img
     class="size-10 rounded-full sm:h-14 sm:w-14"
-    src={blogEntry.data.authorImage}
-    alt={blogEntry.data.authorImageAlt}
-    draggable={"false"}
-    format={"avif"}
+    src={
+      typeof blogEntry.data.authorImage === "string"
+        ? blogEntry.data.authorImage
+        : blogEntry.data.authorImage?.src ?? "/images/default-author.jpg"
+    }
+    alt={blogEntry.data.authorImageAlt ?? "Image de l'auteur"}
+    draggable={false}
   />
 </div>

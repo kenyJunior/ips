@@ -15,11 +15,11 @@ import Icon from "@components/ui/icons/Icon.astro";
     private static readonly BOOKMARKS_KEY = "bookmarks";
     private bookmarkButton: Element | null;
 
-    constructor(private dataAttrValue: string) {
-      this.bookmarkButton = document.querySelector(
-        `[data-bookmark-button="${dataAttrValue}"]`
-      );
-    }
+constructor(dataAttrValue: string) {
+  this.bookmarkButton = document.querySelector(
+    `[data-bookmark-button="${dataAttrValue}"]`
+  );
+}
 
     private getStoredBookmarks(): string[] {
       const item = localStorage.getItem(Bookmark.BOOKMARKS_KEY);
