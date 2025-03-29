@@ -10,6 +10,13 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://screwfast.uk",
+  vite: {
+    resolve: {
+      alias: {
+        '@images': '/src/images',
+      },
+    },
+  },
   image: {
     domains: [],
   },
