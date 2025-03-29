@@ -9,7 +9,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "",
   vite: {
     build: {
       rollupOptions: {
@@ -18,7 +18,7 @@ export default defineConfig({
     },
   },
   image: {
-    domains: [],
+    domains: ["images.unsplash.com"],
   },
   // i18n: {
   //   defaultLocale: "en",
