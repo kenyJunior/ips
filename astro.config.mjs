@@ -11,6 +11,11 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://screwfast.uk",
   vite: {
+    build: {
+      rollupOptions: {
+        external: ['@images/construction-image.jpg'],  // Remplacez par le chemin relatif correct de votre image
+      },
+    },
     resolve: {
       alias: {
         '@images': '/src/images',
