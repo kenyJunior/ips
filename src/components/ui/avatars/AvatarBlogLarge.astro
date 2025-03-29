@@ -14,14 +14,23 @@ interface Props {
 ---
 
 <div class="shrink-0">
-  <img
-    class="size-10 rounded-full sm:h-14 sm:w-14"
-    src={
-      typeof blogEntry.data.authorImage === "string"
-        ? blogEntry.data.authorImage
-        : blogEntry.data.authorImage?.src ?? "/images/default-author.jpg"
-    }
-    alt={blogEntry.data.authorImageAlt ?? "Image de l'auteur"}
-    draggable={false}
-  />
+  {blogEntry?.data ? (
+    <img
+      class="size-10 rounded-full sm:h-14 sm:w-14"
+      src={
+        typeof blogEntry.data.authorImage === "string"
+          ? blogEntry.data.authorImage
+          : blogEntry.data.authorImage?.src ?? "/images/default-author.jpg"
+      }
+      alt={blogEntry.data.authorImageAlt ?? "Image de l'auteur"}
+      draggable={false}
+    />
+  ) : (
+    <img
+      class="size-10 rounded-full sm:h-14 sm:w-14"
+      src="/images/default-author.jpg"
+      alt="Image par défaut"
+      draggable={false}
+    />
+  )}
 </div>

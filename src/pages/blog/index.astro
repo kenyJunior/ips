@@ -106,11 +106,13 @@ const pageTitle: string = `Services | ${SITE.title}`;
       </p>
     </div>
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {
-        insightPosts.map((insightEntry) => (
-          <CardInsight insightEntry={insightEntry} />
-        ))
-      }
-    </div>
+  {
+    insightPosts
+      .filter((insightEntry) => insightEntry?.data) // Filtrer les entrées valides
+      .map((insightEntry) => (
+        <CardInsight insightEntry={insightEntry} insightLocale="fr" />
+      ))
+  }
+</div>
   </section>
 </MainLayout>
