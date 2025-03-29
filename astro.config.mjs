@@ -11,7 +11,12 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://screwfast.uk",
   vite: {
-    
+    build: {
+      rollupOptions: {
+        external: [],
+      },
+    },
+  },
   image: {
     domains: [],
   },
