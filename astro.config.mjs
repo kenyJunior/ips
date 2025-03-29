@@ -9,7 +9,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "",
+  site: "https://ipstechnologies.netlify.app",
   vite: {
     build: {
       rollupOptions: {
